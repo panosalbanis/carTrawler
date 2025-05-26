@@ -1,0 +1,12 @@
+#root {
+  max-width: 900px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+.loading {
+  min-height: 500px;
+}

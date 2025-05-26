@@ -1,0 +1,24 @@
+.add-item {
+  position: relative;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.item-input {
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 30px;
+  font-size: 24px;
+  margin-right: 8px;
+  padding: 5px;
+}
+
+.submit-button {
+  position: absolute;
+  left: 90%;
+  transform: translate(-50%, 0);
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+  color: light-dark(black, white);
+}
