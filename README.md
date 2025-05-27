@@ -32,5 +32,4 @@ Once done, you can visit the UI on [http://localhost:5173](http://localhost:5173
 
 ## Future work
 
-- Add tests for the components in the frontend
 - Handle errors from the API

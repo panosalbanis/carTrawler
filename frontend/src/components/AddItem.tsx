@@ -53,6 +53,7 @@ export default function AddItem({
         placeholder="Add a new item..."
         value={description}
         onChange={handleChange}
+        data-testid="textarea"
       ></textarea>
       <button onClick={handleClick} className="submit-button">
         Add
