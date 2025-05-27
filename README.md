@@ -24,7 +24,7 @@ You can also run the tests using:
 
 The frontend is a react.js application written in Typescript and bundled by vite. To run it:
 
-- `cd backend`
+- `cd frontend`
 - `npm install`
 - `npm run dev` or `npm run build` for watch mode of bundling respectively.
 
