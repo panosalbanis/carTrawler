@@ -15,11 +15,15 @@ const spec = JSON.parse(specJson.toString());
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Handle json in requests and responses
 app.use(express.json());
+
+// Allow cross origin requests. TODO: Disable in production
 app.use(cors());
 
 app.use('/api', apiRouter);
 
+// Serve the open api docs
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(spec));
 
 // Anything not stated above is a 404

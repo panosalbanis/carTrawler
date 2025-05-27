@@ -13,6 +13,7 @@ export default function AddItem({
   setNeedsUpdate,
 }: Props) {
   const [description, setDescription] = useState('');
+
   const handleClick = async (e: SyntheticEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (!description) {

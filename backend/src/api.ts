@@ -25,15 +25,21 @@ apiRouter.post('/items', (req: Request, res: Response) => {
 
 apiRouter.delete('/items/:id', (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
+
+  // The id param could be anything
   if (Number.isNaN(id)) {
     res.status(400).json({ error: ' Id must be a number' });
     return;
   }
+
   const newItems = getItems().filter((i) => i.id !== id);
+
+  // If nothing has changed, the id was not in the list
   if (newItems.length === getItems().length) {
     res.status(404).json({ error: `Item with id [${id}] not found` });
     return;
   }
+
   setItems(newItems);
   res.json({ result: `Item with id [${id}] deleted` });
 });

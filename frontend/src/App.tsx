@@ -15,6 +15,7 @@ function App() {
     // An update is needed if an ADD of DELETE operation has been completed
     if (needsUpdate) {
       setIsLoading(true);
+
       const fetchItems = async () => {
         const response = await fetch('http://localhost:3000/api/items');
         const data = await response.json();
@@ -23,6 +24,7 @@ function App() {
         setCurrentId(data[data.length - 1].id);
         setIsLoading(false);
       };
+
       fetchItems();
       setNeedsUpdate(false);
     }
