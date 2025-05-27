@@ -16,7 +16,7 @@ afterEach(() => {
 });
 
 describe('App', () => {
-  it('Renders a list of Items', async () => {
+  it('Renders a list of Items returned from an API', async () => {
     render(<App></App>);
     expect(screen.findByText('My to-do list')).toBeTruthy;
     expect(screen.findByText('to do item')).toBeTruthy;
